@@ -5,72 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body cz-shortcut-listen="true">
-    <div class="container loginViwe">
-      <div class="row">
-        <div class="leftSide col-4">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint
-            recusandae, fugit laudantium laborum eos sapiente porro iusto cumque
-            adipisci alias at omnis quidem, maiores nulla beatae cupiditate. Ex,
-            id.
-          </p>
-        </div>
+  <body>
+    <div class="bluer">
+      <div class="container logincontiner">
+        <div class="row ">
+          <div class="leftSide col-4 text-white px-5">
+            <h1 class="text-center mt-5"><i class="fab fa-node-js"></i></h1>
+            <h2 class="text-center">Welcom...</h2>
+            <p class="text-center">what did you feel</p>
+            <p class="mt-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint
+              recusandae, fugit laudantium laborum eos sapiente porro         
+            </p>
+          </div>
 
-        <div class="rightSide col-8 text-center">
-          <div class="row">
-            <div class="col-6">
-              <div class="p-5">
-                <h1>we will need</h1>
+          <div class="rightSide col-8 text-center">
+            <div class="row h-100">
+              <div class="col-6">
+                <a class="sign" id="taggle">Signin</a>
 
-                <input
-                  id="Name"
-                  class="form-control my-3"
-                  placeholder="Enter your name"
-                  type="text"
-                />
-                <input
-                  id="Email"
-                  class="form-control my-3"
-                  placeholder="Enter your email"
-                  type="email"
-                />
+                <div class="p-5">
+                  <h1 class="text-left heder">we will need...</h1>
 
-                <input
-                  id="Password"
-                  class="form-control my-3"
-                  placeholder="Enter  password"
-                  type="password"
-                />
-                <p id="exist" class="text-danger"></p>
+                  <input
+                    id="Name"
+                    class="form-control my-3"
+                    placeholder="Enter your name"
+                    type="text"
+                  />
+                  <input
+                    id="Email"
+                    class="form-control my-3"
+                    placeholder="Enter your email"
+                    type="email"
+                  />
 
-                <button id="btn" class="btn btn-outline-info w-100 my-3">
-                  Sign Up
-                </button>
-                <p class="text-white">
-                  <span id="infolog">You have an account?</span>
-                  <button class="text-white btn" id="taggle">Signin</button>
-                </p>
+                  <input
+                    id="Password"
+                    class="form-control my-3"
+                    placeholder="Enter  password"
+                    type="password"
+                  />
+                  <p id="exist" class="text-danger"></p>
+
+                  <button id="btn" class="btn btn-outline-info w-100 my-3">
+                    Sign Up
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="col-1 lincontainer">
-              <div class="line">
-
+              <div class="col-1 lincontainer">
+                <div class="line"></div>
+                <p class="m-1 ">Or</p>
+                <div class="line"></div>
               </div>
-              <p class="m-1">Or</p>
-              <div class="line">
-
-              </div>
+              <div class="col-5 text-left">
+                <p class="heder sacndheder">Also, you can</p>
+                <div class="linkFa">
+                  <div>
+                    <a href="https://m.facebook.com/?locale2=ar_AR" target="_blank"> Login on </a>
+                  </div>
+                  <div>
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                </div>
+              </col>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
 </html>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>

@@ -27,7 +27,10 @@ const saveData = _ => {
         document.getElementById('exist').classList.remove("text-danger")
         document.getElementById('exist').classList.add("text-success")
 
-    } else {
+    } else if(valName == `` || valEmail == `` || valpass == ``) {
+        document.getElementById('exist').innerHTML = `Please enter name email and pass`
+    }else{
+        
         document.getElementById('exist').innerHTML = `email already exists`
     }
 
@@ -102,8 +105,7 @@ const logInSing = () => {
         btn.textContent = "Login"
         btn.removeEventListener("click", saveData)
         btn.addEventListener("click", enter)
-        taggle.innerHTML=`Sign Up`
-        document.getElementById("infolog").innerText=`Don’t have an account?`
+        taggle.innerHTML = `Sign Up`
         taggleTF = false
     } else {
         inputName.style.display = "block"
@@ -111,11 +113,10 @@ const logInSing = () => {
         taggleTF = true;
         btn.removeEventListener("click", enter)
         btn.addEventListener("click", saveData)
-        taggle.innerHTML=`Sign In`
-        document.getElementById("infolog").innerText=`You have an account?`
+        taggle.innerHTML = `Sign In`
     }
 }
-logInSing()
+ logInSing()
 
 taggle.addEventListener('click', logInSing)
 
